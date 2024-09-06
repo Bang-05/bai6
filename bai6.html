@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTC Academy Fashion Week</title>
+    <style>
+        body {
+            margin: 10px;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            width: 100%;
+            background-color: rgb(29, 146, 29);
+            color: white;
+            padding: 20px;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 10px;
+            row-gap: 20px;
+            margin-top: 20px;
+            min-height: 200px; 
+        }
+        .menu div {
+            padding: 10px;
+            box-sizing: border-box; 
+        }
+        .image {
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+        }
+        
+        @media screen and (max-width: 1023px) { 
+            .menu {
+                grid-template-columns: repeat(2, 1fr);
+            }     
+        }
+        @media screen and (max-width: 767px) {
+            .menu {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>VTC Academy Fashion Week</h1>
+        <h3>Resize this responsive page!</h3>
+    </div>
+    <div class="menu">
+        <div class="London">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            <img src="/img/fashion1.jpg" alt="Fashion show in London" class="image">
+        </div>
+        <div class="Paris">
+            <h2>Paris</h2>
+            <p>Paris is the capital city of France.</p>
+            <p>The Paris area is one of the largest population centers in Europe with more than 13 million inhabitants.</p>
+            <img src="/img/fashion2.jpg" alt="Fashion show in Paris" class="image">
+        </div>
+        <div class="Tokyo">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital city of Japan.</p>
+            <p>The Tokyo area is one of the largest population centers in Europe with more than 13 million inhabitants.</p>
+            <img src="/img/fashion3.jpg" alt="Fashion show in Tokyo" class="image">
+        </div>
+    </div>
+</body>
+</html>
